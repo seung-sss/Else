@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1130</width>
+    <height>1030</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1111</width>
+      <height>931</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1091</width>
+       <height>911</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1130</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuOpen">
+     <property name="title">
+      <string>Open</string>
+     </property>
+     <addaction name="action_FileS"/>
+     <addaction name="action_FolderS"/>
+    </widget>
+    <addaction name="menuOpen"/>
+    <addaction name="action_Exit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <widget class="QMenu" name="menuShift">
+     <property name="title">
+      <string>Shift</string>
+     </property>
+     <addaction name="action_Left"/>
+     <addaction name="action_Right"/>
+     <addaction name="action_Up"/>
+     <addaction name="action_Down"/>
+    </widget>
+    <widget class="QMenu" name="menuBlur">
+     <property name="title">
+      <string>Blur</string>
+     </property>
+     <addaction name="action_MedBlur"/>
+     <addaction name="action_GausBlur"/>
+    </widget>
+    <addaction name="action_toGray"/>
+    <addaction name="menuShift"/>
+    <addaction name="action_Rotate"/>
+    <addaction name="action_Crop"/>
+    <addaction name="menuBlur"/>
+   </widget>
+   <widget class="QMenu" name="menuShow">
+    <property name="title">
+     <string>Show</string>
+    </property>
+    <addaction name="action_Next"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuShow"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_FileS">
+   <property name="text">
+    <string>File Select</string>
+   </property>
+  </action>
+  <action name="action_FolderS">
+   <property name="text">
+    <string>Folder Select</string>
+   </property>
+  </action>
+  <action name="action_Exit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="action_toGray">
+   <property name="text">
+    <string>to Gray</string>
+   </property>
+  </action>
+  <action name="action_Rotate">
+   <property name="text">
+    <string>Rotate</string>
+   </property>
+  </action>
+  <action name="action_Crop">
+   <property name="text">
+    <string>Crop</string>
+   </property>
+  </action>
+  <action name="action_Enlarge">
+   <property name="text">
+    <string>Enlarge</string>
+   </property>
+  </action>
+  <action name="action_Left">
+   <property name="text">
+    <string>Left</string>
+   </property>
+  </action>
+  <action name="action_Right">
+   <property name="text">
+    <string>Right</string>
+   </property>
+  </action>
+  <action name="action_Up">
+   <property name="text">
+    <string>Up</string>
+   </property>
+  </action>
+  <action name="action_Down">
+   <property name="text">
+    <string>Down</string>
+   </property>
+  </action>
+  <action name="action_Next">
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </action>
+  <action name="action_Slideshow">
+   <property name="text">
+    <string>Slide show</string>
+   </property>
+  </action>
+  <action name="action_MedBlur">
+   <property name="text">
+    <string>Median Blur</string>
+   </property>
+  </action>
+  <action name="action_GausBlur">
+   <property name="text">
+    <string>Gaussian Blur</string>
+   </property>
+  </action>
+  <action name="action_SizeSetting">
+   <property name="text">
+    <string>Setting</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
